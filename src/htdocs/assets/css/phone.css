@@ -16,6 +16,14 @@ article .third:last-of-type {
 	margin-right: 1%;
 }
 
+fieldset {
+	width: 98%;
+	height: auto;
+	border: 0 none;
+	margin-top: 1em;
+	margin-left: 1%;
+}
+
 /***************************  ELEMENTS ***************************/
 
 section {
@@ -23,9 +31,7 @@ section {
 	height: auto;
 	display: inline-block;
 	position: relative;
-	top: 5em;
 	overflow-x: hidden;
-	margin-bottom: 5em;
 	clear: both !important;
 }
 
@@ -49,7 +55,7 @@ h1 {
 
 h2 {
 	font-family: 'chinoitcpro-regular';
-	font-size: 0.6em;
+	font-size: 0.8em;
 	font-weight: 300;
 	color: #313131;
 }
@@ -60,7 +66,7 @@ h3 {
 
 p {
 	font-family: 'chinoitcpro-light';
-	font-size: 0.5em;
+	font-size: 0.8em;
 	font-weight: 100;
 }
 
@@ -81,12 +87,7 @@ header button {
 
 /****************************  START ****************************/
 
-#start {
-	background-image: url(../images/img_start-bg.png);
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: 100% auto;
-}
+
 
 #home {
 	color: #313131;
@@ -102,10 +103,7 @@ header button {
 	width: auto;
 }
 
-#start .line {
-	width: 45%;
-	margin-bottom: 2em;
-}
+
 
 #start h1 {
 	font-size: 2em;
@@ -312,31 +310,6 @@ header button {
 	line-height: 1em;
 	padding: 0.3em;
 	display: inline;
-}
-
-#technologies article > img {
-	width: 30%;
-	float: left;
-	position: relative;
-	top: 3em;
-	margin-right: 15%;
-}
-
-#technologies ul {
-	list-style-type: none;
-	margin: 0em 1em 0 0em;
-	max-width: 50%;
-	float: left;
-	display: inline-block;
-}
-
-#technologies li {
-	font-family: 'chinoitcpro-regular';
-	font-size: 1em;
-	padding: 1em 0 1em 0;
-	margin-top: -2em;
-	line-height: 1em;
-	border-bottom: 1px solid #c3c3c3;
 }
 
 #technologies li:nth-of-type(3), #technologies li:nth-of-type(4) {
@@ -566,28 +539,7 @@ header button {
 	margin: 0 0 1em 0;
 }
 
-#team menu {
-	width: 30%;
-	height: auto;
-	float: left;
-	margin: 4em 0 0 0.1em;
-	display: inline-block;
-}
 
-.roll {
-	width: 8em;
-	display: inline-block;
-	vertical-align: top;
-	-webkit-perspective: 8em;
-	-moz-perspective: 8em;
-	-webkit-perspective-origin: 50% 50%;
-	-moz-perspective-origin: 50% 50%;
-	cursor: pointer;
-	background-color: #f4f4f4;
-	margin: 0;
-	position: relative;
-	left: 2em;
-}
 
 .roll:before {
 	content: ' ';
@@ -688,7 +640,6 @@ header button {
 }
 
 #team article p {
-	font-size: 1em;
 	padding: 2%;
 	margin-top: 1em;
 	background-color: rgba(255,255,255,0.6);
@@ -702,14 +653,6 @@ header button {
 
 }
 
-#toggle-philipp, #toggle-manuel, #toggle-igor {
-	width: 60%;
-	float: left;
-	position: absolute;
-	left: 35%;
-	z-index: 1000;
-}
-
 .team-img {
 	display: none;
 }
@@ -717,25 +660,10 @@ header button {
 
 /****************************  CONTACT ****************************/
 
-#contact {
-	display: inline-block;
-	overflow: visible;
-	position: relative;
-	top: 35em;
-}
 
 
 /****************************  CAREER ****************************/
 
-#career {
-	display: block;
-	overflow: visible;
-	position: relative;
-	min-height: 480px;
-	top: 35em;
-	clear: both;
-	margin-bottom: 40em;
-}
 
 #career .line {
 	width: 40px;
@@ -748,11 +676,12 @@ header button {
 #career .box {
 	background: rgba(255,255,255,0.6);
 	margin: 40px 0 0 0;
+	padding: 10px 0;
 	min-height: 20px;
 }
 
 #career .box img {
-	padding: 0 15px 45px 15px;
+	padding: 1em;
 	float: left;
 }
 
@@ -761,6 +690,12 @@ header button {
 	font-family: 'chinoitcpro-bold';
 	font-weight: 700;
 	font-size: 0.9em;
+	padding: 0.5em 0 0 0;
+	float: left;
+}
+
+#career p {
+	float: left;
 }
 
 #career .inner > img {
@@ -771,13 +706,15 @@ header button {
 
 /****************************  FINAL ****************************/
 
-#final {
-	display: block;
-	height: 480px;
-	clear: both;
-	position: relative;
-	top: 35em;
-	margin-bottom: -3em;
+#final h1 {
+	font-family: 'chinoitcpro-bold';
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 0.9em;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
+	margin-top: 5em;
 }
 
 
@@ -786,12 +723,208 @@ header button {
 
 @media all and (orientation: portrait) {
 
+	section {
+		min-height: 460px;
+	}
+
+	#start {
+		background-image: url(../images/img_start-bg.png);
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: 100% auto;
+		margin-top: 2em;
+	}
+
+	#start .line {
+		width: 45%;
+		margin-bottom: 6em;
+	}
+
+	#technologies article > img {
+		display: none;
+	}
+
+	#technologies ul {
+		list-style-type: none;
+		margin: 0 0 0 15%;
+		max-width: 82%;
+		float: left;
+		display: inline-block;
+	}
+
+	#technologies li {
+		font-family: 'chinoitcpro-regular';
+		font-size: 1em;
+		padding: 1em 0 1em 0;
+		margin-top: -2em;
+		line-height: 1em;
+		border-bottom: 1px solid #c3c3c3;
+	}
+
+	#team menu {
+		width: 96%;
+		height: auto;
+		float: left;
+		margin: 0 2%;
+		display: inline-block;
+		clear: both;
+	}
+
+	#toggle-philipp, #toggle-manuel, #toggle-igor {
+		width: 90%;
+		float: left;
+		position: relative;
+		left: 5%;
+		z-index: 1000;
+	}
+
+	.roll {
+		width: 15em;
+		display: inline-block;
+		vertical-align: top;
+		-webkit-perspective: 15em;
+		-moz-perspective: 15em;
+		-webkit-perspective-origin: 50% 50%;
+		-moz-perspective-origin: 50% 50%;
+		cursor: pointer;
+		background-color: #f4f4f4;
+		margin: 0;
+		position: relative;
+		left: 2em;
+	}
+
+
+
+
+	#contact {
+		display: inline-block;
+		overflow: visible;
+		position: relative;
+		margin-top: 3em;
+	}
+
+	#career {
+		display: block;
+		overflow: visible;
+		position: relative;
+		min-height: 480px;
+		top: 5em;
+		clear: both;
+		margin-bottom: 0;
+	}
+
+
+	#final {
+		display: block;
+		height: 120px;
+		clear: both;
+		position: relative;
+		top: 0;
+	}
 
 
 }
 
 @media all and (orientation: landscape) {
 
+	section {
+		top: 5em;
+		margin-bottom: 5em;
+	}
+
+	#start {
+		background-image: url(../images/img_start-bg.png);
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: 100% auto;
+	}
+
+	#start .line {
+		width: 45%;
+		margin-bottom: 2em;
+	}
+
+	#technologies article > img {
+		width: 30%;
+		float: left;
+		position: relative;
+		top: 3em;
+		margin-right: 15%;
+	}
+
+	#technologies ul {
+		list-style-type: none;
+		margin: 0em 1em 0 0em;
+		max-width: 50%;
+		float: left;
+		display: inline-block;
+	}
+
+	#technologies li {
+		font-family: 'chinoitcpro-regular';
+		font-size: 1em;
+		padding: 1em 0 1em 0;
+		margin-top: -2em;
+		line-height: 1em;
+		border-bottom: 1px solid #c3c3c3;
+	}
+
+	#team menu {
+		width: 30%;
+		height: auto;
+		float: left;
+		margin: 4em 0 0 0.1em;
+		display: inline-block;
+	}
+
+	#toggle-philipp, #toggle-manuel, #toggle-igor {
+		width: 60%;
+		float: left;
+		position: absolute;
+		left: 35%;
+		z-index: 1000;
+	}
+
+	.roll {
+		width: 8em;
+		display: inline-block;
+		vertical-align: top;
+		-webkit-perspective: 8em;
+		-moz-perspective: 8em;
+		-webkit-perspective-origin: 50% 50%;
+		-moz-perspective-origin: 50% 50%;
+		cursor: pointer;
+		background-color: #f4f4f4;
+		margin: 0;
+		position: relative;
+		left: 2em;
+	}
+
+	#final {
+		display: block;
+		height: 480px;
+		clear: both;
+		position: relative;
+		top: 35em;
+		margin-bottom: -3em;
+	}
+
+	#contact {
+		display: inline-block;
+		overflow: visible;
+		position: relative;
+		top: 35em;
+	}
+
+	#career {
+		display: block;
+		overflow: visible;
+		position: relative;
+		min-height: 480px;
+		top: 35em;
+		clear: both;
+		margin-bottom: 40em;
+	}
 
 
 }

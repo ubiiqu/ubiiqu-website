@@ -58,6 +58,7 @@
 body {
 	font-size: 100.1%;
 	background-color: #f4f4f4;
+	-webkit-text-size-adjust: 100%;
 }
 
 section:last-of-type {
@@ -73,13 +74,7 @@ h3 {
 	line-height: 1.1em;
 }
 
-fieldset {
-	width: 50%;
-	height: auto;
-	border: 0 none;
-	margin-top: 1em;
-	margin-left: 25%;
-}
+
 
 fieldset:last-of-type {
 	border-style: solid none none none;
@@ -344,15 +339,7 @@ header button {
 	background-color: #48bbe0;
 }
 
-#final h1 {
-	font-family: 'chinoitcpro-bold';
-	font-size: 5em;
-	font-weight: 700;
-	line-height: 0.9em;
-	color: #ffffff;
-	text-transform: uppercase;
-	text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
-}
+
 
 #final h2 {
 	font-family: 'chinoitcpro-medium';

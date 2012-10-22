@@ -16,6 +16,14 @@ article .third:last-of-type {
 	margin-right: 1%;
 }
 
+fieldset {
+	width: 50%;
+	height: auto;
+	border: 0 none;
+	margin-top: 1em;
+	margin-left: 25%;
+}
+
 /***************************  ELEMENTS ***************************/
 
 section {
@@ -697,6 +705,16 @@ header button {
 	width: 100%;
 	height: auto;
 	margin-top: 10%;
+}
+
+#final h1 {
+	font-family: 'chinoitcpro-bold';
+	font-size: 5em;
+	font-weight: 700;
+	line-height: 0.9em;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
 }
 
 
