@@ -182,6 +182,10 @@ header button {
 	cursor: pointer;
 }
 
+.box h3 {
+	margin-bottom: 0.8em;
+}
+
 #start .box {
 	height: 7em;
 }

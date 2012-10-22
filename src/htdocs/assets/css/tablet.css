@@ -755,6 +755,18 @@ header button {
 		display: inline-block;
 	}
 
+	#start .slider {
+		width: 100% !important;
+	}
+
+	#start .slider .third {
+		width: 49%;
+	}
+
+	#start .slider .third:last-of-type {
+		display: none;
+	}
+
 	/****************************  SERVICES ****************************/
 
 	#services {

@@ -90,23 +90,18 @@ header button {
 
 /****************************  START ****************************/
 
-
-
 #home {
 	color: #313131;
 	font-family: 'chinoitcpro-bold';
 	font-size: 0.9em;
 	text-decoration: none;
 	line-height: 1em;
-	margin: 2em 0 0 0;
 }
 
 #home > img {
 	height: 2em;
 	width: auto;
 }
-
-
 
 #start h1 {
 	font-size: 2em;
@@ -734,14 +729,18 @@ header button {
 	#start {
 		background-image: url(../images/img_start-bg.png);
 		background-repeat: no-repeat;
-		background-position: center right;
-		background-size: 100% auto;
-		margin-top: 2em;
+		background-position: top right;
+		background-size: auto 100%;
+		margin: 2em 0 0 0;
+	}
+
+	#home {
+		margin: 10em 0 0 0;
 	}
 
 	#start .line {
 		width: 45%;
-		margin-bottom: 6em;
+		margin-bottom: 0.5em;
 	}
 
 	#technologies article > img {
@@ -797,9 +796,6 @@ header button {
 		left: 2em;
 	}
 
-
-
-
 	#contact {
 		display: inline-block;
 		overflow: visible;
@@ -826,13 +822,12 @@ header button {
 		top: 0;
 	}
 
-
 }
 
 @media all and (orientation: landscape) {
 
 	section {
-		top: 5em;
+		top: 0;
 		margin-bottom: 5em;
 	}
 
@@ -840,7 +835,7 @@ header button {
 		background-image: url(../images/img_start-bg.png);
 		background-repeat: no-repeat;
 		background-position: top right;
-		background-size: 100% auto;
+		background-size: 80% auto;
 	}
 
 	#start .line {
