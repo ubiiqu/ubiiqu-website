@@ -88,11 +88,7 @@ header li {
 }
 
 header button {
-	margin: 0;
-	padding: 0 3px 0 0;
-	position: relative;
-	top: 0;
-	right: 1em;
+	display: none;
 }
 
 /****************************  START ****************************/
@@ -118,39 +114,6 @@ header button {
 	text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
 }
 
-/*
-
-#start a {
-	color: #ffffff;
-	font-family: 'chinoitcpro-medium';
-	font-size: 1.1em;
-	text-decoration: none;
-	text-transform: uppercase;
-	line-height: 1.4em;
-	border-radius: 4px;
-	background-image: -webkit-linear-gradient(top, #5e5e5e, #0e0e0e);
-	background-image: -moz-linear-gradient(top, #5e5e5e, #0e0e0e);
-	background-image: -o-linear-gradient(top, #5e5e5e, #0e0e0e);
-  background-position: initial initial;
-  background-repeat: initial initial;
-	display: inline-block;
-	padding: 0 5px;
-	position: relative;
-	clear: both;
-	float: left;
-}
-
-#start a img {
-	height: 0.8em;
-	width: auto;
-	padding: 0 0 0 5px;
-	position: relative;
-	top: 1px;
-}
-
-
-*/
-
 .slider .third:last-of-type {
 	margin-right: 0;
 }
@@ -172,6 +135,10 @@ header button {
 
 #start .box {
 	height: 8em;
+}
+
+.box h3 {
+	margin-bottom: 0.5em;
 }
 
 .box-img {
