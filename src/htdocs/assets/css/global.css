@@ -414,3 +414,7 @@ aside {
 aside h1 {
 	margin: 1em 0;
 }
+
+aside .line {
+	width: 90px;
+}
