@@ -1,0 +1,18 @@
+{
+  "name": "Projectname",
+  "version": "0.5.0",
+  "homepage": "http://www.ubiiqu.com/",
+  "description": "",
+  "keywords": [
+    ""
+  ],
+  "author": {
+    "name": "ubiiqu GmbH",
+    "url": "http://www.ubiiqu.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ubiiqu/.git"
+  },
+  "build": 77
+}

@@ -1,0 +1,114 @@
+
+
+#viewport-shadow {
+  position: relative;
+  width: 680px;
+  padding: 0 140px 70px;
+	margin-top: 2em;
+  background: url(../images/box-shadow.png) bottom no-repeat;
+}
+
+
+#viewport, #box, .slide {
+  width: 680px;
+  height: 400px;
+}
+
+.slide {
+	background-image: url(../images/bg_wood-2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.slide h1 {
+	color: #ffffff;
+	margin: 10px;
+	text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
+}
+
+#viewport {
+  overflow: hidden;
+}
+
+#controls {
+  position: relative;
+  top: -40px;
+	left: 43%;
+  overflow: hidden;
+}
+
+#controls li {
+  display: inline;
+}
+
+.goto-slide {
+  margin-left: 8px;
+  width: 11px;
+  height: 11px;
+  display: block;
+  float: left;
+  border: none;
+  background-color: #eaeaeb;
+  border-radius: 6px;
+}
+
+.goto-slide.current {
+  background-color: #de1f26;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 180px;
+  width: 26px;
+  height: 45px;
+  display: block;
+}
+
+#prev {
+  background: url(../images/ic_slider_left.png) no-repeat;
+  left: 90px;
+}
+
+#next {
+	left: 80px;
+  background: url(../images/ic_slider_right.png) no-repeat !important;
+}
+
+#next:hover, #prev:hover {
+  background: url(img/next-prev-sprite-hover.png) no-repeat;
+  border: none;
+}
+
+#next, #next:hover {
+  left: 840px;
+  background-position: -30px 0;
+}
+
+.effect, .effect:hover {
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  border: solid 1px black;
+  border-radius: 7px;
+  padding: 10px 12px 6px;
+  color: #ccc;
+  text-decoration: none;
+  background-color: #555;
+  -webkit-box-shadow: inset 0px 0px 8px #000;
+  -moz-box-shadow: inset 0px 0px 8px #333;
+  box-shadow: inset 0px 0px 8px #333;
+}
+
+
+.effect.current, .effect:hover.current {
+  color: #2edbac;
+}
+
+#time-indicator {
+  width: 0px;
+  height: 3px;
+  background-color: #de1f26;
+  position: absolute;
+  top: 400px;
+  left: 140px;
+}
