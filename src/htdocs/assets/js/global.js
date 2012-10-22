@@ -36,6 +36,10 @@ var device = {
 		return(w);
 	},
 
+	getMediaQuery: function() {
+		return window.getComputedStyle(document.body,':after').getPropertyValue('content');
+	},
+
 	type: function() {
 		var w = device.getWindowWidth();
 		var h = device.getWindowHeight();
