@@ -1,3 +1,7 @@
+body:after {
+	content: 'mobile';
+	display: none;
+}
 
 /****************************  HELPER ****************************/
 

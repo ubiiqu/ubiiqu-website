@@ -1,3 +1,7 @@
+body:after {
+	content: 'tablet';
+	display: none;
+}
 
 /****************************  HELPER ****************************/
 

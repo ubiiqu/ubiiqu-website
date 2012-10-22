@@ -291,6 +291,10 @@ header button {
 	float: right;
 }
 
+header ul li a {
+	color: white;
+	text-decoration: none;
+}
 
 /****************************  START ****************************/
 
@@ -329,6 +333,10 @@ header button {
 	background-position: top left;
 	background-origin: border-box;
 	padding-top: 35px;
+}
+
+#contact .error {
+	border: 1px solid darkred;
 }
 
 
