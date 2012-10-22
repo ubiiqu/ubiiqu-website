@@ -159,7 +159,7 @@ var content = {
 		var pos = content.getScrollPosition();
 		var sec = content.getSectionSize();
 
-		sec = sec + 42;
+		sec = sec + 30;
 
 		for(var i = 1; i <= 10; i++) {
 
