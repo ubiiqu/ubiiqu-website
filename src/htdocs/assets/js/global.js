@@ -183,7 +183,7 @@ var content = {
 	},
 
 	box: function() {
-
+/*
 		var $box = $('#box')
 		, $indicators = $('.goto-slide')
 		, $effects = $('.effect')
@@ -218,6 +218,7 @@ var content = {
 			$box.boxSlider('showSlide', $(this).data('slideindex'));
 			ev.preventDefault();
 		});
+*/
 
 	},
 
