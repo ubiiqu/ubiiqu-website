@@ -1,13 +1,8 @@
 <?php
-error_reporting(0);
 header("Content-Type: application/json; charset=utf-8");
 //title, name, email, msg
 $errors = array();
 if($_POST) {
-
-	if(strlen($_POST['title']) < 2) {
-	//	$errors[] = 'Please provide an email address.';
-	}
 
 	if(strlen($_POST['name']) < 2) {
 		$errors[] = 'Please tell us your name.';
@@ -33,7 +28,7 @@ if($_POST) {
 
 	} else {
 
-		include "phpmailer.php";
+		include "class.phpmailer.php";
 
 		$mail = new phpmailer();
 		$mail->AddAddress('manuel.bieh@ubiiqu.com', 'ubiiqu Team');
