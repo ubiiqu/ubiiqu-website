@@ -35,7 +35,6 @@ section {
 	height: auto;
 	display: inline-block;
 	position: relative;
-	overflow-x: hidden;
 	clear: both !important;
 }
 

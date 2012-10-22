@@ -18,6 +18,7 @@ $(function() {
 
 	content.setBodyHeight();
 	content.setBodyWidth();
+	content.setSectionSize();
 	content.scrollTo(0);
 	content.box();
 	user.actions();
@@ -108,26 +109,35 @@ var content = {
 	setBodyWidth: function() {
 		var bodyWidth = device.getWindowWidth() + 'px';
 		$('body').width(bodyWidth);
-		$('body').css('overflow-x','hidden');
+		//$('body').css('overflow-x','hidden');
 	},
 
 	getSectionSize: function() {
 		var h = device.getWindowHeight();
 		var secHeight = (h - 42);
-		return(secHeight);
+		return secHeight;
 	},
 
 	setSectionSize: function() {
 		var secHeight = content.getSectionSize();
-		$('section').css('height', secHeight + 'px');
+		//$('section').css('height', secHeight + 'px');
+		//$('section').height(secHeight);
+		$('section').css({
+			'min-height': secHeight + 'px', 
+			'padding-top': 42
+		});
 	},
 
 	setContentOffset: function() {
 		$('section > .inner').each(function() {
-			var secHeight = content.getSectionSize();
-			var contentHeight = $(this).innerHeight();
-			var contentTop = ((secHeight - contentHeight) / 2) + 'px';
+
+			var	secHeight		= content.getSectionSize();
+			var	contentHeight	= $(this).innerHeight();
+			var	contentTop		= ((secHeight - contentHeight) / 2) + 'px';
+				contentTop		= parseInt(contentTop) < 0 ? 0 : contentTop;
+
 			$(this).css('top', contentTop);
+
 		});
 	},
 
@@ -149,26 +159,6 @@ var content = {
 
 		}
 
-		if(pos < (1 * sec)) {
-			var cur = 0;
-		} else if(pos >= (1 * sec) && pos < (2 * sec)) {
-			var cur = 1;
-		} else if(pos >= (2 * sec) && pos < (3 * sec)) {
-			var cur = 2;
-		} else if(pos >= (3 * sec) && pos < (4 * sec)) {
-			var cur = 3;
-		} else if(pos >= (4 * sec) && pos < (5 * sec)) {
-			var cur = 4;
-		} else if(pos >= (5 * sec) && pos < (6 * sec)) {
-			var cur = 5;
-		} else if(pos >= (6 * sec) && pos < (7 * sec)) {
-			var cur = 6;
-		} else if(pos >= (7 * sec) && pos < (8 * sec)) {
-			var cur = 7;
-		} else if(pos >= (8 * sec) && pos < (9 * sec)) {
-			var cur = 8;
-		}
-		return(cur);
 	},
 
 	getScrollPosition: function() {
