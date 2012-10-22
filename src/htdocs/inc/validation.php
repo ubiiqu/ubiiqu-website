@@ -39,6 +39,7 @@ if($_POST) {
 		$mail->AddAddress('manuel.bieh@ubiiqu.com', 'ubiiqu Team');
 		$mail->Subject = 'Message via ubiiqu.com';
 		$mail->Body = $_POST['msg'];
+		$mail->Send();
 		$json['status'] = true;
 		$json['message'] = 'Thank you for your message!';
 
