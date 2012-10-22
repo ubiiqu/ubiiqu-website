@@ -22,6 +22,42 @@ $(document).ready(function() {
 	content.box();
 	user.actions();
 
+	$('#form-contact').on('submit', function(e) {
+
+		e.preventDefault();
+		var form = $(this);
+
+		form.find('.error').removeClass('error');
+		$('.errorlist').html('');
+
+		$.ajax({
+
+			url: "inc/validation.php?xhr",
+			data: form.serialize(),
+			type: 'post',
+			success: function(resp) {
+
+				if(resp.status == true) {
+
+					form.html('<p>' + resp.message + '</p>');
+
+				} else {
+
+					$.each(resp.highlight, function(k, el) {
+						$(el).addClass('error');
+					});
+					$.each(resp.errors, function(k, err) {
+						$('.errorlist').append('<li>' + err + '</li>');
+					});
+
+				}
+
+			}
+
+		});
+
+	});
+
 });
 
 var device = {
