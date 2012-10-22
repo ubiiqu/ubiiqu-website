@@ -118,6 +118,7 @@ header button {
 	margin-bottom: 3em;
 }
 
+/*
 #start a {
 	color: #ffffff;
 	font-family: 'chinoitcpro-medium';
@@ -136,7 +137,6 @@ header button {
 	position: relative;
 	clear: both;
 	float: left;
-
 }
 
 #start a img {
@@ -146,6 +146,7 @@ header button {
 	position: relative;
 	top: 1px;
 }
+*/
 
 .slider {
 	width: 300%;
