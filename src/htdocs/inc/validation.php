@@ -1,7 +1,10 @@
 <?php
 error_reporting(0);
 header("Content-Type: application/json; charset=utf-8");
-//title, name, email, msg
+
+$json = array();
+$json['status'] = false;
+
 $errors = array();
 if($_POST) {
 
@@ -40,13 +43,13 @@ if($_POST) {
 		$header  = 'MIME-Version: 1.0' . "\r\n";
 		$header .= 'Content-type: text/plain; charset=utf-8' . "\r\n";
 		$header .= 'From:  ' . $_POST['name'] . ' <' . $_POST['email'] . '>' . "\r\n";
-		$header .= 'To: Manuel <manuel.bieh@ubiiqu.com.com>' . "\r\n";
+		$header .= 'To: Manuel <info@ubiiqu.com>' . "\r\n";
 
-		mail('manuel.bieh@ubiiqu.com', 'Message via ubiiqu.com', $_POST['msg'], $header);
+		mail('info@ubiiqu.com', 'Message via ubiiqu.com', $_POST['msg'], $header);
 
 		file_put_contents(
-			dirname(__FILE__) . '/mail/' . time() . '.txt', 
-			'FROM: ' . $_POST['name'] . ' <' . $_POST['email'] . '>' .
+			dirname(__FILE__) . '/mail/' . date('Y-m-d_H-i') . '_' . md5($_POST['email']) . '.txt', 
+			'FROM: ' . $_POST['name'] . ' <' . $_POST['email'] . '>' . "\n" .
 			'MESSAGE: ' . "\n" .
 			$_POST['msg']
 		);
@@ -55,10 +58,6 @@ if($_POST) {
 		$json['message'] = 'Thank you for your message!';
 
 	}
-
-} else {
-
-	$json['status'] = false;
 
 }
 
