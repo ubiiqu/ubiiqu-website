@@ -1,5 +1,7 @@
 <?php
 error_reporting(0);
+ini_set('display_errors', 'off');
+
 header("Content-Type: application/json; charset=utf-8");
 
 $json = array();
