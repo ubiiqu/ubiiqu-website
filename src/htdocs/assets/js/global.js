@@ -1,6 +1,7 @@
-$(document).ready(function() {
+$(function() {
 
-	var deviceType = device.type();
+	var deviceType = device.getType();
+
 	if(deviceType == 'desktop') {
 
 		content.setSectionSize();
@@ -13,12 +14,11 @@ $(document).ready(function() {
 
 	} else if(deviceType == 'mobile') {
 		// add different script
-
 	}
 
 	content.setBodyHeight();
 	content.setBodyWidth();
-	content.scroll(0);
+	content.scrollTo(0);
 	content.box();
 	user.actions();
 
@@ -76,9 +76,11 @@ var device = {
 		return window.getComputedStyle(document.body,':after').getPropertyValue('content');
 	},
 
-	type: function() {
+	getType: function() {
+
 		var w = device.getWindowWidth();
 		var h = device.getWindowHeight();
+
 		if(w <= 640) {
 			var type = 'mobile';
 		} else if(w >= 641 && w <= 1024) {
@@ -135,8 +137,18 @@ var content = {
 	},
 
 	getCurrentSection: function() {
-		var pos = content.getPosition();
+
+		var pos = content.getScrollPosition();
 		var sec = content.getSectionSize();
+
+		for(var i = 1; i <= 10; i++) {
+
+			if(pos >= (i * sec) && pos < ( (i+1) * sec)) {
+				return i;
+			}
+
+		}
+
 		if(pos < (1 * sec)) {
 			var cur = 0;
 		} else if(pos >= (1 * sec) && pos < (2 * sec)) {
@@ -159,12 +171,12 @@ var content = {
 		return(cur);
 	},
 
-	getPosition: function() {
+	getScrollPosition: function() {
 		var top = $(window).scrollTop();
 		return(top);
 	},
 
-	scroll: function(val) {
+	scrollTo: function(val) {
 		var h = device.getWindowHeight();
 		var scrollPosition = parseInt((val * (h)), 10);
 		$(window).scrollTop(scrollPosition);
@@ -222,32 +234,32 @@ var user = {
 			content.setContentOffset();
 		});
 
-		$('header ul li a').on('click', function() {
+		$(document).on('click', 'header ul li a', function() {
 			var section = parseInt(this.id, 10);
 			var size = content.getSectionSize();
 			var distance = section * size;
 			$(window).scrollTop(distance);
 		});
 
-		$('#team menu a').on('click', function() {
+		$(document).on('click', '#team menu a', function() {
 			var target = '#toggle-' + this.title;
 			$('#toggle-philipp, #toggle-manuel, #toggle-igor').fadeOut('fast');
 			$(target).fadeIn('slow');
 		});
 
-		$('#a-terms').on('click', function() {
+		$(document).on('click', '#a-terms', function() {
 			$('#contents').removeClass('original');
 			$('#contents').addClass('zoomout');
 			$('#terms').fadeToggle('slow');
 		});
 
-		$('#a-imprint').on('click', function() {
+		$(document).on('click', '#a-imprint', function() {
 			$('#contents').removeClass('original');
 			$('#contents').addClass('zoomout');
 			$('#imprint').fadeToggle('slow');
 		});
 
-		$('aside > button').on('click', function() {
+		$(document).on('click', 'aside > button', function() {
 			$('#terms, #imprint').fadeOut('slow');
 			$('#contents').removeClass('zoomout');
 			$('#contents').addClass('original');
