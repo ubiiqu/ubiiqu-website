@@ -44,6 +44,13 @@ if($_POST) {
 
 		mail('manuel.bieh@ubiiqu.com', 'Message via ubiiqu.com', $_POST['msg'], $header);
 
+		file_put_contents(
+			dirname(__FILE__) . '/mail/' . time() . '.txt', 
+			'FROM: ' . $_POST['name'] . ' <' . $_POST['email'] . '>' .
+			'MESSAGE: ' . "\n" .
+			$_POST['msg']
+		);
+
 		$json['status'] = true;
 		$json['message'] = 'Thank you for your message!';
 
