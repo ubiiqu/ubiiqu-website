@@ -59,6 +59,12 @@ $(function() {
 
 	});
 
+	$(window).on('scroll', function() {
+		$('header ul li').removeClass('active');
+		var section = content.getCurrentSection();
+		$('header ul li:eq('+ (section -1) +')').addClass('active');
+	});
+
 });
 
 var device = {
@@ -151,6 +157,8 @@ var content = {
 		var pos = content.getScrollPosition();
 		var sec = content.getSectionSize();
 
+		sec = sec + 42;
+
 		for(var i = 1; i <= 10; i++) {
 
 			if(pos >= (i * sec) && pos < ( (i+1) * sec)) {
@@ -163,7 +171,7 @@ var content = {
 
 	getScrollPosition: function() {
 		var top = $(window).scrollTop();
-		return(top);
+		return top;
 	},
 
 	scrollTo: function(val) {
