@@ -62,7 +62,9 @@ $(function() {
 	$(window).on('scroll', function() {
 		$('header ul li').removeClass('active');
 		var section = content.getCurrentSection();
-		$('header ul li:eq('+ (section -1) +')').addClass('active');
+		if(!isNaN(section)) {
+			$('header ul li:eq('+ (section - 1) +')').addClass('active');
+		}
 	});
 
 });
@@ -157,7 +159,7 @@ var content = {
 		var pos = content.getScrollPosition();
 		var sec = content.getSectionSize();
 
-		sec = sec + 42;
+		sec = sec + 30;
 
 		for(var i = 1; i <= 10; i++) {
 
