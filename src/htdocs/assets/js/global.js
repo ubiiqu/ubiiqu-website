@@ -62,7 +62,9 @@ $(function() {
 	$(window).on('scroll', function() {
 		$('header ul li').removeClass('active');
 		var section = content.getCurrentSection();
-		$('header ul li:eq('+ (section -1) +')').addClass('active');
+		if(!isNaN(section)) {
+			$('header ul li:eq('+ (section - 1) +')').addClass('active');
+		}
 	});
 
 });

@@ -313,6 +313,10 @@ header ul li a {
 	text-decoration: none;
 }
 
+header ul li.active a {
+	color: #69E4EC;
+}
+
 /****************************  START ****************************/
 
 
