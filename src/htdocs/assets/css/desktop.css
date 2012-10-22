@@ -30,7 +30,6 @@ section {
 	display: inline-block;
 	position: relative;
 	top: 42px;
-	overflow-x: hidden;
 }
 
 h1 {
@@ -55,8 +54,9 @@ h3 {
 }
 
 p {
-	font-family: 'chinoitcpro-light';
+	/*font-family: 'chinoitcpro-light';*/
 	font-size: 0.8em;
+	line-height: 1.5em;
 	font-weight: 100;
 }
 

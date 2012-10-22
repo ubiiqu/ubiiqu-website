@@ -36,7 +36,6 @@ section {
 	display: inline-block;
 	position: relative;
 	top: 42px;
-	overflow-x: hidden;
 }
 
 h1 {

@@ -59,6 +59,7 @@ body {
 	font-size: 100.1%;
 	background-color: #f4f4f4;
 	-webkit-text-size-adjust: 100%;
+	font-family: helvetica, arial, sans-serif;
 }
 
 section:last-of-type {
@@ -100,7 +101,8 @@ input[type="text"], input[type="email"], textarea {
 	color: #626262;
 	font-size: 1.2em;
 	line-height: 1.4em;
-	font-family: 'chinoitcpro-light';
+	/*font-family: 'chinoitcpro-light';
+	*/
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-o-appearance: none;
@@ -394,7 +396,9 @@ footer {
 }
 
 footer p, footer a {
+	/*
 	font-family: 'chinoitcpro-light';
+	*/
 	font-size: 0.8em;
 	font-weight: 100;
 	text-decoration: none;
