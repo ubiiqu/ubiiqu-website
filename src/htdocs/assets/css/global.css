@@ -248,6 +248,21 @@ button:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.errorlist {
+	width: 90%;
+	height: auto;
+	margin: 5% 5% 0 5%;
+	list-style-type: none;
+	text-align: center;
+}
+
+.errorlist li {
+	font-family: 'chinoitcpro-bold' !important;
+	font-size: 1.2em;
+	color: #de1f26;
+}
+
+
 /****************************  HEADER ****************************/
 
 header {
