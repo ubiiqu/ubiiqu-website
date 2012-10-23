@@ -244,12 +244,10 @@ var user = {
 			$(window).scrollTop(distance);
 		});
 
-		$(document).on('click', 'header button', function() {
-			$('header ul').slideToggle('fast');
-		});
-
-		$(document).on('click', 'header li', function() {
-			$('header ul').slideToggle('fast');
+		$(document).on('click', 'header button, header li', function() {
+			if(device.getMediaQuery() == 'mobile') {
+				$('header ul').slideToggle('fast');
+			}
 		});
 
 		$(document).on('click', '#team menu a', function() {
