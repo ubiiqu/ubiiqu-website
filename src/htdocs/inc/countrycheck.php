@@ -14,7 +14,7 @@ if(class_exists('Net_GeoIP') && file_exists(dirname(__FILE__) . '/GeoIP.dat')) {
 			$_SERVER['SERVER_NAME'] != 'us.ubiiqu.com' &&
 			$_SERVER['SERVER_NAME'] != 'www.ubiiqu.us'
 		) {
-			header("Location: http://us.ubiiqu.com");
+			header("Location: http://ubiiqu.us");
 		}
 
 	} else {
