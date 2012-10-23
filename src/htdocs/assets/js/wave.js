@@ -120,6 +120,7 @@
 				Terminate( "That's it. No more tweets for you." );
 			}
 
+/*
 			$.post("search.php", {query: TWITTER_QUERY, max_id: twitterMaxId, rpp: TWEETS_PER_PAGE}, function(xml){
 
 				if( !$('entry',xml) || $('entry',xml).length == 0 ) {
@@ -150,6 +151,8 @@
 				isDownloadingTweets = false;
 
 			});
+*/
+
 		}
 
 		/**
