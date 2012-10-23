@@ -13,6 +13,8 @@ $(function() {
 		setTimeout(function() {content.setContentOffset();}, 1000);
 
 	} else if(deviceType == 'mobile') {
+
+		$('header ul').css('display','none');
 		// add different script
 	}
 
@@ -131,7 +133,7 @@ var content = {
 		//$('section').css('height', secHeight + 'px');
 		//$('section').height(secHeight);
 		$('section').css({
-			'min-height': secHeight + 'px', 
+			'min-height': secHeight + 'px',
 			'padding-top': 42
 		});
 	},
@@ -240,6 +242,14 @@ var user = {
 			var size = content.getSectionSize();
 			var distance = section * size;
 			$(window).scrollTop(distance);
+		});
+
+		$(document).on('click', 'header button', function() {
+			$('header ul').slideToggle('fast');
+		});
+
+		$(document).on('click', 'header li', function() {
+			$('header ul').slideToggle('fast');
 		});
 
 		$(document).on('click', '#team menu a', function() {
