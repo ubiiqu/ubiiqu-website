@@ -1,6 +1,6 @@
 $(function() {
 
-	var deviceType = device.getType();
+	var deviceType = device.getMediaQuery() || 'desktop';
 
 	if(deviceType == 'desktop') {
 
