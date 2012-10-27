@@ -3,16 +3,9 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-css');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-compress');
-
-	grunt.registerTask('increment-build', function() {
-		var pkg = grunt.file.readJSON('package.json');
-		pkg.build = parseInt(pkg.build) + 1;
-		grunt.file.write('package.json', JSON.stringify(pkg, null, 2));
-	});
 
 	grunt.registerTask('showtime', function() {
 
@@ -90,7 +83,7 @@ module.exports = function(grunt) {
 	sass: {
 		dist: {
 			files: {
-				'dist/htdocs/assets/css/compiled.css' : 'src/htdocs/assets/sass/master.scss'
+				'dist/htdocs/assets/css/layout.css' : 'src/htdocs/assets/sass/master.scss'
 			},
 			options: {
 				lineNumbers: true
@@ -98,7 +91,7 @@ module.exports = function(grunt) {
 		},
 		distmin: {
 			files: {
-				'dist/htdocs/assets/css/compiled.min.css' : 'src/htdocs/assets/sass/master.scss'
+				'dist/htdocs/assets/css/layout.min.css' : 'src/htdocs/assets/sass/master.scss'
 			},
 			options: {
 				style: 'compressed'
@@ -113,10 +106,6 @@ module.exports = function(grunt) {
 		libs: {
 			src: ['<banner:meta.banner>','src/htdocs/assets/js/libs/*','src/htdocs/assets/js/libs/**/*'],
 			dest: 'dist/htdocs/assets/js/libs.js'
-		},
-		css: {
-			src: 'src/htdocs/assets/css/*',
-			dest: 'dist/htdocs/assets/css/layout.css'
 		}
 	},
 	min: {
@@ -131,7 +120,7 @@ module.exports = function(grunt) {
 	},
 	cssmin: {
 		app: {
-			src: 'src/htdocs/assets/css/*',
+			src: 'dist/htdocs/assets/css/layout.css',
 			dest: 'dist/htdocs/assets/css/layout.min.css'
 		}
 	},
@@ -172,7 +161,7 @@ module.exports = function(grunt) {
 	},
 	uglify: {},
 	watch: {
-		files: ['grunt.js', 'src/htdocs/assets/**/*'],
+		files: ['grunt.js', 'src/htdocs/**/*'],
 		tasks: 'default'
 	}
 	});
@@ -188,7 +177,7 @@ module.exports = function(grunt) {
 	//  8. Create gzip versions of JS+CSS
 	//  9. pkg.build++
 	// 10. Watch changes in 'src/htdocs/assets'
-	grunt.registerTask('build', 'clean:precopy copy clean:postcopy sass concat min cssmin compress:gz increment-build showtime');
+	grunt.registerTask('build', 'clean:precopy copy clean:postcopy concat sass min cssmin compress:gz showtime');
 	grunt.registerTask('pack', 'build compress:pack');
 	grunt.registerTask('lintme', 'lint');
 	grunt.registerTask('test', 'qunit');

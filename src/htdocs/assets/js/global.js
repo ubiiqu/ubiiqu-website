@@ -1,7 +1,7 @@
 $(function() {
 
 	var deviceType = device.getMediaQuery() || 'desktop';
-
+/*
 	if(deviceType == 'desktop') {
 
 		content.setSectionSize();
@@ -27,8 +27,8 @@ $(function() {
 	content.setSectionSize();
 	content.scrollTo(0);
 	content.box();
+*/
 	user.actions();
-
 	$('#form-contact').on('submit', function(e) {
 
 		e.preventDefault();
