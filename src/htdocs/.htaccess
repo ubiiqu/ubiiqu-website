@@ -1,1 +1,18 @@
+AddType application/x-httpd-php .html .htm 
 AddHandler application/x-httpd-php .html .htm 
+
+<IfModule mod_headers.c>
+	# 2 DAYS
+	<FilesMatch "\.(xml|txt|css|js|gz)$">
+	Header set Cache-Control "max-age=172800, proxy-revalidate"
+	</FilesMatch>
+</IfModule>
+
+#Header set Access-Control-Allow-Origin: *
+#AddType text/javascript .gz
+
+RewriteEngine On
+RewriteCond %{HTTP:Accept-Encoding} .*gzip.*
+RewriteRule (.*)\.js$ $1.js.gz [L]
+RewriteRule (.*)\.css$ $1.css.gz [L]
+AddEncoding x-gzip .gz

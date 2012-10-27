@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "includes/colors.scss";
+@import "generic/global.scss";
+
+@media all and (min-width: 1px) and (max-width: 767px) {
+	@import "media/phone.scss";
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	@import "media/tablet.scss";
+}
+
+@media all and (min-width: 1025px) {
+	@import "media/desktop.scss";
+}

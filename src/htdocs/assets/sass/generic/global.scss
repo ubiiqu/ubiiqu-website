@@ -1,0 +1,446 @@
+/*  global css for all media */
+
+/****************************  FONTS ****************************/
+
+@font-face{
+	font-family: 'chinoitcpro-bold';
+	src: url('../fonts/chinoitcpro-bold.eot');
+	src: url('../fonts/chinoitcpro-bold.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/chinoitcpro-bold.woff') format('woff'),
+			 url('../fonts/chinoitcpro-bold.ttf') format('truetype'),
+			 url('../fonts/chinoitcpro-bold.svg#WebSymbolsRegular') format('svg');
+}
+
+@font-face{
+	font-family: 'chinoitcpro-medium';
+	src: url('../fonts/chinoitcpro-medium.eot');
+	src: url('../fonts/chinoitcpro-medium.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/chinoitcpro-medium.woff') format('woff'),
+			 url('../fonts/chinoitcpro-medium.ttf') format('truetype'),
+			 url('../fonts/chinoitcpro-medium.svg#WebSymbolsRegular') format('svg');
+}
+
+@font-face{
+	font-family: 'chinoitcpro-regular';
+	src: url('../fonts/chinoitcpro-regular.eot');
+	src: url('../fonts/chinoitcpro-regular.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/chinoitcpro-regular.woff') format('woff'),
+			 url('../fonts/chinoitcpro-regular.ttf') format('truetype'),
+			 url('../fonts/chinoitcpro-regular.svg#WebSymbolsRegular') format('svg');
+}
+
+@font-face{
+	font-family: 'chinoitcpro-light';
+	src: url('../fonts/chinoitcpro-light.eot');
+	src: url('../fonts/chinoitcpro-light.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/chinoitcpro-light.woff') format('woff'),
+			 url('../fonts/chinoitcpro-light.ttf') format('truetype'),
+			 url('../fonts/chinoitcpro-light.svg#WebSymbolsRegular') format('svg');
+}
+
+@font-face{
+	font-family: 'websymbols-regular-webfont';
+	src: url('../fonts/websymbols-regular-webfont.eot');
+	src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+			 url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+			 url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+}
+
+
+/****************************  ELEMENTS ****************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 100.1%;
+	background-color: #f4f4f4;
+	-webkit-text-size-adjust: 100%;
+	font-family: helvetica, arial, sans-serif;
+}
+
+section:last-of-type {
+	top: 0 !important;
+	margin-top: 42px !important;
+}
+
+h3 {
+	font-family: 'chinoitcpro-bold';
+	font-size: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.1em;
+}
+
+fieldset:last-of-type {
+	border-style: solid none none none;
+}
+
+label {
+	font-family: 'chinoitcpro-regular';
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #313131;
+	text-transform: uppercase;
+	padding: 0.5em 0 0 1em;
+}
+
+label:last-of-type {
+	font-family: 'chinoitcpro-bold';
+	font-weight: 700;
+}
+
+input[type="text"], input[type="email"], textarea {
+	width: 92%;
+	height: auto;
+	color: #626262;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	/*font-family: 'chinoitcpro-light';
+	*/
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+  background-color: #ffffff;
+  background-position: initial initial;
+  background-repeat: initial initial;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	-o-background-clip: padding-box;
+  background-clip: padding-box;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border: 0 none;
+  display: inline-block;
+	padding: 1% 2%;
+	margin: 1% 2%;
+  vertical-align: middle;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input::-moz-input-placeholder, textarea::-moz-input-placeholder {
+  color:#777777;
+}
+
+button {
+	color: #FFFFFF;
+	font-size: 0.9em;
+	font-family: 'chinoitcpro-medium';
+	text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
+	background: #313131;
+	border: 0 none;
+	-webkit-box-shadow: 0 0 0 #666666;
+	-moz-box-shadow: 0 0 0 #666666;
+	-o-box-shadow: 0 0 0 #666666;
+	box-shadow: 0 0 0 #666666;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	margin: 15px 10px 10px 0;
+	padding: 10px 25px;
+	cursor: pointer;
+	float: right;
+	clear: both;
+}
+
+button:hover {
+
+}
+
+/****************************  GENERAL ****************************/
+
+.hidden {
+	display: none;
+}
+
+.symbol {
+	font-family: 'websymbols-regular-webfont';
+}
+
+.inner {
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	position: relative;
+}
+
+.third {
+	height: auto;
+	float: left;
+}
+
+.symbol {
+	font-size: 0.9em;
+	font-variant: normal !important;
+}
+
+.line {
+	height: 1px;
+	border-bottom: 1px solid #313131;
+	display: block;
+	margin: 0.3em 0;
+}
+
+.red {
+	background-color: #de1f26;
+	color: #ffffff;
+	border-color: #ffffff !important;
+}
+
+.blue {
+	background-color: #4a84c5;
+	color: #ffffff;
+	border-color: #ffffff !important;
+}
+
+.white {
+	background-color: #ffffff;
+	color: #313131;
+	border-color: #313131 !important;
+}
+
+.black {
+	background-color: #313131;
+	color: #ffffff;
+	border-color: #313131 !important;
+}
+
+.bold {
+	font-family: 'chinoitcpro-bold' !important;
+}
+
+.zoomout {
+	-webkit-transform: scale(0.98);
+	-moz-transform: scale(0.98);
+	-ms-transform: scale(0.98);
+	-o-transform: scale(0.98);
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-ms-filter: blur(2px);
+	-o-filter: blur(2px);
+	filter: blur(2px);
+	-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.original {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.errorlist {
+	width: 90%;
+	height: auto;
+	margin: 5% 5% 0 5%;
+	list-style-type: none;
+	text-align: center;
+}
+
+.errorlist li {
+	font-family: 'chinoitcpro-bold' !important;
+	font-size: 1.2em;
+	color: #de1f26;
+}
+
+
+/****************************  HEADER ****************************/
+
+header {
+	width: 100%;
+	height: 42px;
+	background: #313131;
+	display: block;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	z-index: 5000;
+}
+
+header img {
+	height: 28px;
+	width: auto;
+}
+
+header button {
+	width: 26px;
+	height: 28px;
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'chinoitcpro-bold';
+	text-align: center;
+	line-height: 28px;
+	background-image: url(../images/icon_wimpel_turq.png);
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+  background-color: transparent;
+  background-position: initial initial;
+  background-repeat: initial initial;
+	border: 0 none;
+	overflow: visible;
+	z-index: 2000;
+	clear: both;
+	float: right;
+}
+
+header ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+header ul li.active a {
+	color: #69E4EC;
+}
+
+/****************************  START ****************************/
+
+
+
+/****************************  SERVICES ****************************/
+
+
+
+/****************************  TECHNOLOGIES ****************************/
+
+
+
+/****************************  SHOWTIME ****************************/
+
+
+
+/****************************  ABOUT US ****************************/
+
+
+
+/****************************  TEAM ****************************/
+
+
+
+/****************************  CONTACT ****************************/
+
+#contact .line {
+	width: 40px;
+	margin: 1em 0;
+}
+
+#contact textarea {
+	background-image: url(../images/ic_contact.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-origin: border-box;
+	padding-top: 35px;
+}
+
+#contact .error {
+	border: 1px solid darkred;
+}
+
+
+
+/****************************  FINAL ****************************/
+
+#final {
+	background-color: #48bbe0;
+}
+
+
+
+#final h2 {
+	font-family: 'chinoitcpro-medium';
+	font-size: 2em;
+	font-weight: 500;
+	line-height: 1.2em;
+	color: #ffffff;
+	text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
+}
+
+/****************************  FOOTER ****************************/
+
+footer {
+	width: 100%;
+	height: 44px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 102;
+  border-bottom-color: #474747;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-color: #474747;
+  border-top-style: solid;
+  border-top-width: 1px;
+	background-color: #313131;
+}
+
+footer p, footer a {
+	/*
+	font-family: 'chinoitcpro-light';
+	*/
+	font-size: 0.8em;
+	font-weight: 100;
+	text-decoration: none;
+	line-height: 44px;
+	color: #efefef;
+	float: right;
+	margin: 0 1%;
+	padding: 0;
+	display: inline;
+}
+
+footer a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+/****************************  TERMS ****************************/
+
+aside {
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	z-index: 3000;
+	width: 76%;
+	height: auto;
+	background-color: #ffffff;
+	padding: 2%;
+	box-shadow: 10px 10px 40px #313131;
+}
+
+aside h1 {
+	margin: 1em 0;
+}
+
+aside .line {
+	width: 90px;
+}
+
+
+#world {
+	max-width: 100%;
+}

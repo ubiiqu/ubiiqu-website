@@ -5,12 +5,16 @@ $(function() {
 	if(deviceType == 'desktop') {
 
 		content.setSectionSize();
-		setTimeout(function() {content.setContentOffset();}, 1000);
+		setTimeout(function() {
+			content.setContentOffset();
+		}, 1000);
 
 	} else if(deviceType == 'tablet') {
 
 		content.setSectionSize();
-		setTimeout(function() {content.setContentOffset();}, 1000);
+		setTimeout(function() {
+			content.setContentOffset();
+		}, 1000);
 
 	} else if(deviceType == 'mobile') {
 

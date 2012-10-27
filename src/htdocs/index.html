@@ -1,426 +1,50 @@
-<?php require 'inc/countrycheck.php'; ?>
-<!DOCTYPE html>
-<html>
-<head>
+<?php include "inc/_header.php"; ?>
 
-	<!-- SEO Meta -->
-	<title>ubiiqu</title>
-	<meta name="author" content="ubiiqu GmbH">
-	<meta name="copyright" content="ubiiqu GmbH">
-	<meta name="description" content="The information age is the age of ubiquity, and we seek to maximize the digital scope of our clients in the most dynamic ways possible.">
-	<meta name="keywords" content="ubiiqu, online, internet, webdesign, usability, mobile, tablet, smartTV">
-	<meta name="robots" content="index, follow">
+	<section id="start">
 
-	<!-- Page Settings -->
-	<meta charset="utf-8" />
-	<meta http-equiv="content-language" content="en">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta name="apple-mobile-web-app-title" content="ubiiqu" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
-	<link rel="apple-touch-icon" href="assets/images/bookmark.png" />
-	<link rel="apple-touch-startup-image" href="assets/images/splashscreen_320x460.png" />
-	<link rel="apple-touch-startup-image" sizes="640x960" href="assets/images/splashscreen_640x960.png" />
-	<link rel="apple-touch-startup-image" sizes="768x1004" href="assets/images/splashscreen_768x1004.png" />
-	<link rel="apple-touch-startup-image" sizes="1024x748" href="assets/images/splashscreen_1024x748.png" />
-
-	<!-- css -->
-	<link rel="stylesheet" media="all" href="assets/css/global.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/phone.css" media="all and (min-width: 1px) and (max-width: 767px)" />
-	<link rel="stylesheet" type="text/css" href="assets/css/tablet.css" media="all and (min-width: 768px) and (max-width: 1024px)" />
-	<link rel="stylesheet" type="text/css" href="assets/css/desktop.css" media="all and (min-width: 1025px)" />
-
-	<!-- js -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.8.2.min.js"><\/script>')</script>
-	<script src="assets/js/global.js"></script>
-
-</head>
-<body>
-
-	<header>
 		<div class="inner">
-			<a href="#start"><img src="assets/images/logo_white.png" /></a>
-			<ul>
-				<li><a href="#services">services</a></li>
-				<li><a href="#technologies">technologies</a></li>
-				<!--<li><a href="#showtime">showtime</a></li>-->
-				<li><a href="#about">about us</a></li>
-				<li><a href="#team">meet 'n greet</a></li>
-				<li><a href="#contact">get in touch</a></li>
-				<li><a href="#career">join us</a></li>
-			</ul>
-			<button>&#160;</button>
+			<div id="home"><img src="assets/images/ic_home_black-1.png" />HOME</div>
+			<div class="line"></div>
+			<h1>Everything<br /> is connected</h1>
+			<h2>You connect, too.</h2>
+			<!-- a href="#">Find out more <img src="assets/images/ic_start_a_arrow.png" /></a -->
+			<div class="slider">
+
+				<div class="third">
+					<div class="tab red">
+						SERVICES
+					</div>
+					<div class="box red">
+						<img src="assets/images/ic_start_tab_1.png" class="box-img" />
+						<div class="line"></div><br />
+						<h3>Your Product,<br />Our Vision</h3>
+						<p>The information age is the age of ubiquity, and we seek to maximize the digital... <img src="assets/images/ic_start_a_arrow_white.png" class="a-img" /></p>
+					</div>
+				</div>
+				<div class="third">
+					<div class="tab blue">
+							ABOUT US
+					</div>
+					<div class="box blue">
+						<img src="assets/images/ic_start_tab_2.png" class="box-img" />
+						<div class="line"></div><br />
+						<h3>A brief history of the internet of things</h3>
+						<p>ubiiqu offers comprehensive, innovative services for the digital landscape. <img src="assets/images/ic_start_a_arrow_white.png" class="a-img" /></p>
+					</div>
+				</div>
+				<div class="third">
+					<div class="tab black">
+						MEET &amp; GREET
+					</div>
+					<div class="box white">
+						<img src="assets/images/ic_start_tab_3.png" class="box-img-last" />
+						<div class="line"></div><br />
+						<h3>Meet the core team of ubiiqu</h3>
+						<p>We come along with diversity - take a look at who you should be working with <img src="assets/images/ic_start_a_arrow_black.png" class="a-img" /></p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</header>
+	</section>
 
-	<div id="contents" class="original">
-
-		<section id="start">
-			<div class="inner">
-				<div id="home"><img src="assets/images/ic_home_black-1.png" />HOME</div>
-				<div class="line"></div>
-				<h1>Everything<br /> is connected</h1>
-				<h2>You connect, too.</h2>
-				<!-- a href="#">Find out more <img src="assets/images/ic_start_a_arrow.png" /></a -->
-				<div class="slider">
-
-					<div class="third">
-						<div class="tab red">
-							SERVICES
-						</div>
-						<div class="box red">
-							<img src="assets/images/ic_start_tab_1.png" class="box-img" />
-							<div class="line"></div><br />
-							<h3>Your Product,<br />Our Vision</h3>
-							<p>The information age is the age of ubiquity, and we seek to maximize the digital... <img src="assets/images/ic_start_a_arrow_white.png" class="a-img" /></p>
-						</div>
-					</div>
-					<div class="third">
-						<div class="tab blue">
-								ABOUT US
-						</div>
-						<div class="box blue">
-							<img src="assets/images/ic_start_tab_2.png" class="box-img" />
-							<div class="line"></div><br />
-							<h3>A brief history of the internet of things</h3>
-							<p>ubiiqu offers comprehensive, innovative services for the digital landscape. <img src="assets/images/ic_start_a_arrow_white.png" class="a-img" /></p>
-						</div>
-					</div>
-					<div class="third">
-						<div class="tab black">
-							MEET &amp; GREET
-						</div>
-						<div class="box white">
-							<img src="assets/images/ic_start_tab_3.png" class="box-img-last" />
-							<div class="line"></div><br />
-							<h3>Meet the core team of ubiiqu</h3>
-							<p>We come along with diversity - take a look at who you should be working with <img src="assets/images/ic_start_a_arrow_black.png" class="a-img" /></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="services">
-			<div class="inner">
-				<h1>Services</h1>
-				<div class="line"></div>
-				<p><span class="bold">The information age is the age of ubiquity, and we seek to maximize the digital scope of our clients in the most dynamic ways possible. </span>From the initial stages of analysis all the way through realization and testing, our solutions are not only unique, but form-fitting, allowing our clients to choose from any or all of our three core areas of expertise when developing their digital profiles.</p>
-				<article id="services-analysis">
-					<img src="assets/images/ic_services_1.png" />
-					<h1>Analysis</h1>
-					<div class="h-line"></div>
-					<h2><img src="assets/images/ic_start_a_arrow_white.png" class="a-img" />let's take your measurements</h2>
-					<p>In terms of digital services, we're the first to admit that each company is created differently, requiring services custom-tailored to their size, user base and spread. ubiiqu analyzes each client's potential and derives the appropriate web strategies to encourage growth. Whether enhancing visual identities, improving functionality or opening up to new channels such as mobile, web or console applications, we focus on forging a multi-pronged approach through our hybrid combination of technology, business and creative consulting.</p>
-				</article>
-				<article id="services-conception">
-					<img src="assets/images/ic_services_2.png" />
-					<h1>Conception</h1>
-					<div class="h-line"></div>
-					<h2><img src="assets/images/ic_start_a_arrow_white.png" class="a-img" />your product, our vision</h2>
-					<p>Once we understand what needs to be done, we then focus on how we can implement it. We select the appropriate digital building materials, from software architecture to design mock-ups, and go about modeling the systems, channels and devices that comprise a comprehensive web strategy. From wireframe models, software prototyping and business development, this is the stage where we engage our well-rounded team of designers, developers, copywriters and marketing professionals to conceive the most encompassing of solutions.</p>
-				</article>
-				<article id="services-realization">
-					<img src="assets/images/ic_services_3.png" />
-					<h1>Realization</h1>
-					<div class="h-line"></div>
-					<h2><img src="assets/images/ic_start_a_arrow_white.png" class="a-img" />beta, meet alpha</h2>
-					<p>From hundreds of thousands of keystrokes to the many hours spent programming quality code, the minds at ubiiqu put in some very physical effort into realizing our “virtual" services. We love a thorough challenge and embrace the latest technologies to push the limits of our abilities even further. This is where true invention happens. It’s where we forge our own answers and where we redefine the possibilities of what you’ve previously thought possible. It all culminates in our rigorous prototyping, testing and quality control phase, which ensures truly revolutionary services for our clients the moment our solutions hit the market.</p>
-				</article>
-			</div>
-		</section>
-
-		<section id="technologies">
-			<div class="inner">
-				<h1>Technologies</h1>
-				<div class="line"></div>
-				<p><span class="bold">Fusing the capabilities of a large consultancy firm with the flexibility of a start-up environment,</span><br /> the minds behind ubiiqu are fluent in all the requisite technologies to develop, foster and promote strong, scalable digital profiles. Our core technologies include all major programming languages and CMS platforms, with a particular emphasis on integration between web-based media, mobile devices and home entertainment systems. We seek to create products that can be translated into any number of applications, aiming at cross-platform pollination whenever and wherever possible.</p>
-				<article id="tech-specs">
-					<h3>Our core technologies &amp; </h3><br />
-					<h3>specialities include:</h3><br />
-					<img src="assets/images/img_cubes.png" />
-					<ul>
-						<li>Web Programming: HTML5, HbbTV, CSS, JavaScript, jQuery or XSLT</li>
-						<li>System Scalability: Node.js, PHP, WebSockets, REST, API building</li>
-						<li>CMS Platforms: TYPO3, Drupal, Joomla, Wordpress and Silverstripe CMS platforms</li>
-						<li>Multichannel and responsive technologies: TV, mobile, tablet devices, desktops, navigation, game consoles, and more</li>
-					</ul>
-				</article>
-				<img src="assets/images/img_lines_s.png" />
-			</div>
-		</section>
-
-		<!--
-		<section id="showtime">
-			<div class="inner">
-				<h1>Showtime</h1>
-				<div class="line"></div>
-				<div id="viewport-shadow">
-					<a href="#" id="prev" title="go to the next slide"></a>
-					<a href="#" id="next" title="go to the next slide"></a>
-					<div id="viewport">
-						<div id="box">
-							<figure class="slide">
-								<h1>Handelsblatt</h1>
-							</figure>
-							<figure class="slide">
-								<h1>Wirtschaftswoche</h1>
-							</figure>
-							<figure class="slide">
-								<h1>MAVIS INSPECTION</h1>
-							</figure>
-							<figure class="slide">
-								<h1>GrandMaster Flash</h1>
-							</figure>
-							<figure class="slide">
-								<h1>XYZ</h1>
-							</figure>
-						</div>
-					</div>
-					<div id="time-indicator"></div>
-				</div>
-				<nav class="slider-controls">
-					<ul id="controls">
-						<li><a class="goto-slide current" href="#" data-slideindex="0"></a></li>
-						<li><a class="goto-slide" href="#" data-slideindex="1"></a></li>
-						<li><a class="goto-slide" href="#" data-slideindex="2"></a></li>
-						<li><a class="goto-slide" href="#" data-slideindex="3"></a></li>
-						<li><a class="goto-slide" href="#" data-slideindex="4"></a></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
-		-->
-
-		<section id="about">
-			<div class="inner">
-				<h1>About us</h1>
-				<div class="line"></div>
-				<p>ubiiqu offers comprehensive, innovative services for the digital landscape. From the web to Smart TV, we understand the platforms that will power the future. Our team pools together the experience that allows us to deliver custom-tailored solutions for an array of clients looking to revolutionize their digital identity. Our aim is to develop strong, sustainable profiles for the ever-evolving digital landscape.</p>
-				<article>
-					<img src="assets/images/ic_about-1.png" class="about-icon" />
-					<img src="assets/images/img_lines_s.png" class="about-lines" />
-					<h3>Everything is connected: A brief history of the internet of things</h3>
-					<div class="line"></div>
-					<p>Taking our name from the word “ubiquitous", ubiiqu seeks to expose the interconnectivity of everything, online and off. As internet-based applications jump from desktops to mobile devices, ubiiqu focuses on the next generation of online applications, seeking to integrate the virtual landscape with the physical landscape. From cars to homes, mobile devices and entertainment centers, ubiiqu designs specifically for the “internet of things", seeking to better integrate the objects of our daily lives with unique networked services.</p>
-				</article>
-				<article>
-					<img src="assets/images/ic_about-2.png" class="about-icon" />
-					<img src="assets/images/img_lines_s.png" class="about-lines" />
-					<h3>We target ubiquity</h3>
-					<div class="line"></div>
-					<p>With over 15 years of consulting and technical expertise under our belts, the minds at ubiiqu have been consistently tinkering to provide the best solutions for a wide variety of internet- based applications. We are internet junkies, programming language polyglots and new-media devotees that devote our resources to forging dynamic services that meld creativity with adaptability. Our scalable solutions are ideal for those wishing to achieve “ubiquity" in today’s networked environment.</p>
-				</article>
-				<article>
-					<img src="assets/images/ic_about-3.png" class="about-icon" />
-					<img src="assets/images/img_lines_s.png" class="about-lines" />
-					<h3>Our House</h3>
-					<div class="line"></div>
-					<p>We serve as a complete, stand-alone company dedicated to fostering digital profiles for clients, customers and brands. Our independent perspective allows us to provide fresh insight for either high-profile clients or new endeavors looking to establish a strong online profile.</p>
-				</article>
-				<img src="assets/images/img_lines_s.png" />
-			</div>
-		</section>
-
-		<section id="team">
-			<div class="inner">
-				<h1>Meet 'n' Greet</h1>
-				<div class="line"></div>
-				<menu>
-					<a id="btn-philipp" title="philipp" class="roll">
-						<span data-title="meet philipp">
-							<h1>PHILIPP</h1>
-							<h2 class="team-title">Vision Development</h2>
-						</span>
-					</a>
-					<a id="btn-manuel" title="manuel" class="roll">
-						<span data-title="meet manuel">
-							<h1>MANUEL</h1>
-							<h2>Technical Affairs</h2>
-						</span>
-					</a>
-					<a id="btn-igor" title="igor" class="roll">
-						<span data-title="meet igor">
-							<h1>IGOR</h1>
-							<h2>Operations &amp; Sales</h2>
-						</span>
-					</a>
-				</menu>
-				<div id="toggle-philipp">
-					<article id="team-philipp">
-						<img src="assets/images/img-team-head-1.png" />
-						<h1>Philipp</h1>
-						<h2>Vision Development</h2>
-						<p>
-							Seeing is believing, but understanding what you see is certainly of a higher order. ubiiqu's vision developer Philipp Boué brings his multilingual talents to the forefront, speaking not only German, English and some Spanish, but also fluent in the programming languages that allow him to articulate projects with 20/20 vision. His hybrid approach splices together technical savvy with creative consulting, resulting in services that go far beyond that which meets the eye.
-							With a Masters in International Business Administration—and certainly the emphasis is on international—Philipp's had stints between London, Munich, Melbourne and Düsseldorf performing an array of consultancy and project management positions for clients including Deutsche Bahn, ZEIT Verlag, Ralph Lauren or Vodafone. When he's not forging peerless visual profiles, you might find him DJing drum and bass, trying his hand at music production or rooting tirelessly for Borussia Dortmund with colleague and fellow fan Manuel.
-						</p>
-					</article>
-					<img src="assets/images/philipp.png" alt="Philipp Boue" title="Philipp Boue" class="team-img" />
-					<a href="mailto:philipp.boue@ubiiqu.com" class="mail-btn"><img src="assets/images/ic_start_a_arrow_black.png" /> Send an email <br /> to Philipp</a>
-				</div>
-				<div id="toggle-manuel" class="hidden">
-					<article id="team-manuel">
-						<img src="assets/images/img-team-head-1.png" />
-						<h1>Manuel</h1>
-						<h2>Technical Affairs</h2>
-						<p>
-							The talented Mr. Bieh began his engagement with the internet at the ripe age of 14 when he set up his first commercial website. He has since laid the technical foundations for a wide variety of web pages, software applications and mobile services during his time. With demonstrated programming skills in HTML5, PHP, SQL, CSS3 and an especially strong sense of JavaScript, Manuel takes the nitty gritty syntax of digital coding and transforms it into clean, elegant code. Having serviced a variety of clients while working as a technical officer and software developer, he was even selected in 2008 to pen the first book in Germany about mobile web design.
-							As ubiiqu's head of technical affairs, Manuel not only programs with proficiency, but he seeks to connect all that he codes into an “internet of things". What’s that? Well, mobile applications may be the first step, but soon the most mundane of objects will be linked together. This might be the world of tomorrow - he's got it going today.
-						</p>
-					</article>
-					<img src="assets/images/manuel.png" alt="Manuel Bieh" title="Manuel Bieh" class="team-img" />
-					<a href="mailto:manuel.bieh@ubiiqu.com" class="mail-btn"><img src="assets/images/ic_start_a_arrow_black.png" /> Send an email <br /> to Manuel</a>
-				</div>
-				<div id="toggle-igor" class="hidden">
-					<article id="team-igor">
-						<img src="assets/images/img-team-head-1.png" />
-						<h1>Igor</h1>
-						<h2>Operations</h2>
-						<p>
-							Certainly one of the few people who can boast a discography just as impressive as their CV, Igor splits his time between New York and Berlin promoting a wide range of projects from celebrity marketing tools, digital media applications and the occasional album or two. He signed his first major record deal in 1997 and went on to produce for Sony, Universal and Bertelsmann, which gave him the impetus to fuse his love of music with the emerging possibilities of the mobile market. Since then he's peppered MGM, Fox Mobile and White Diamonds with business development strategies that have helped blossom the profiles of their products and services.
-							As head of operations for ubiiqu, Igor injects his background in art into a management style that's equal parts competent and creative. Whether researching new mobile revenue models, establishing streaming services or simply hanging out with fellow musicians and “open-minded business freaks" like himself, he's to be found on the fast track creating the next applications of the brave new digital world.
-						</p>
-					</article>
-					<img src="assets/images/shadee.png" alt="Igor Koelblinger" title="Igor Koelblinger" class="team-img" />
-					<a href="mailto:igor.koelblinger@ubiiqu.com" class="mail-btn"><img src="assets/images/ic_start_a_arrow_black.png" /> Send an email <br /> to Igor</a>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact">
-
-			<div class="inner">
-
-				<h1>Get in touch</h1>
-				<div class="line"></div>
-				<article class="full">
-
-					<?php include "inc/validation.php"; ?>
-
-					<?php if(!empty($errors) || empty($_POST)) { ?>
-						<ul class="errorlist">
-						<?php foreach($errors AS $error) { ?>
-							<li><?= $error; ?></li>
-						<?php } ?>
-						</ul>
-
-						<form id="form-contact" method="post" action="index.html#contact">
-							<fieldset>
-								<label for="name">Your name</label>
-								<input type="text" name="name" id="name" title="name" value="<?php echo htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="" />
-								<label for="email">Your eMail</label>
-								<input type="email" name="email" id="email" title="email" value="<?php echo htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="" />
-								<label for="msg">Your Message</label>
-								<textarea name="msg" id="msg" rows="5" placeholder=""><?php echo htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8'); ?></textarea>
-							</fieldset>
-
-							<fieldset>
-								<button id="done">send</button>
-							</fieldset>
-
-						</form>
-
-					<?php } else { ?>
-
-						<p><?= $json['message']; ?></p>
-
-					<?php } ?>
-
-				</article>
-			</div>
-		</section>
-
-		<section id="career">
-			<div class="inner">
-				<h1>Join us!</h1>
-				<div class="line"></div>
-				<article>
-					<p><b>Just like our products and services, ubiiqu offers a working environment that values left-field thinking and an inclination towards the unconventional.</b> At the heart of our working week lies the 4+1 philosophy, where each member of our team works four days for the company and one day on their own project. Alongside perks such as company bikes, fresh fruit and an inspiring, open office space, we make sure to provide a relaxed, all-encompassing professional experience. We’re also power-napping friendly.</p>
-					<div class="box">
-						<img src="assets/images/ic_star.png" />
-						<h3>Think you would shine as part of our team?</h3>
-						<p>Drop us your CV alongside a very brief letter and a concise overview of your previous projects (commercial and/or open source) explaining how you could contribute your skills to ubiiqu.</p>
-					</div>
-				</article>
-				<img src="assets/images/img_career_lines.png" />
-			</div>
-		</section>
-
-		<section id="final">
-			<div class="inner">
-				<h1>everything is<br /> connected</h1>
-				<h2>you, too?</h2>
-			</div>
-			<canvas id="world"></canvas>
-			<script src="assets/js/wave.js"></script>
-		</section>
-
-		<footer>
-			<p>&#169; ubiiqu GmbH 2012</p>
-			<a id="a-terms">terms &amp; conditions</a>
-			<a id="a-imprint">imprint</a>
-		</footer>
-
-	</div>
-
-	<aside id="terms" class="popup hidden">
-		<button>X</button>
-		<h1>Terms &amp; Conditions</h1>
-		<p>
-			<b>Disclaimer of Liability: </b>ubiiqu GmbH does not guarantee that the information provided on this web site is complete, accurate and always current. This applies also to all links cited on this website points, either directly or indirectly. ubiiqu GmbH is not responsible for the contents of pages reached by clicking on any link. ubiiqu GmbH reserve the right to change or add to the information provided without prior notice. In making this information available, ubiiqu GmbH does not establish the basis for any offer about information, consulting or similar contractual relationships. All liability for the use of the content of the website or for the accuracy of the content or for the availability of the website is excluded. ubiiqu GmbH does not assume any liability whatsoever for actual, direct or indirect losses or for losses incurred due to the unavailability of use, data losses or lost profits in connection with the use of documents or information accessible via this web site. 		</p>
-	</aside>
-
-	<aside id="imprint" class="popup hidden">
-		<button>X</button>
-		<h1>Imprint</h1>
-		<p>
-			ubiiqu GmbH<br />
-			Koppenplatz 13<br />
-			10115 Berlin
-		</p>
-		<div class="line"></div>
-		<p>
-			Amtsgericht Dortmund<br />
-			HRB 24797<br />
-			USt-IdNr. DE283079990
-		</p>
-		<div class="line"></div>
-		<p>
-			<b>Board of Directors</b><br />
-			Manuel Bieh, Philipp Boué
-		</p>
-		<div class="line"></div>
-		<p>
-			E info@ubiiq.com<br />
-			www.ubiiqu.com
-		</p>
-	</aside>
-
-	<!--
-	<script src="assets/js/box-slider-all.jquery.min.js"></script>
-	-->
-
-<script type="text/javascript">
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-33343807-1']);
-_gaq.push(['_trackPageview']);
-_gaq.push(['_gat._anonymizeIp']);
-
-(function() {
-	var ga = document.createElement('script');
-	ga.type = 'text/javascript';
-	ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-</script>
-
-</body>
-</html>
+<?php include "inc/_footer.php"; ?>
