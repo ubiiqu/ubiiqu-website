@@ -1,4 +1,6 @@
-<?php require 'countrycheck.php'; ?>
+<?php // require 'countrycheck.php'; ?>
+<?php header("Content-Type: text/html; charset=utf-8"); ?>
+<?php $url = $_SERVER['REQUEST_URI']; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,13 +28,13 @@
 	<link rel="apple-touch-startup-image" sizes="1024x748" href="assets/images/splashscreen_1024x748.png" />
 
 	<!-- css -->
-	<link href="assets/css/layout.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
 	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.8.2.min.js"><\/script>')</script>
 
-	<script src="assets/js/main.min.js"></script>
-	<script src="assets/js/libs.min.js"></script>
+	<script src="assets/js/main.min.js?v=<?= (int) filemtime(dirname(__FILE__) . '/../assets/js/main.min.js'); ?>"></script>
+	<script src="assets/js/libs.min.js?v=<?= (int) filemtime(dirname(__FILE__) . '/../assets/js/libs.min.js'); ?>"></script>
 
 </head>
 <body>
@@ -41,13 +43,13 @@
 		<div class="inner">
 			<a href="index.html"><img src="assets/images/logo_white.png" /></a>
 			<ul>
-				<li><a href="services.html">services</a></li>
-				<li><a href="technologies.html">technologies</a></li>
+				<li<?php echo (strpos($url, 'services.html')) ? ' class="active" ' : ''; ?>><a href="services.html">services</a></li>
+				<li<?php echo (strpos($url, 'technologies.html')) ? ' class="active" ' : ''; ?>><a href="technologies.html">technologies</a></li>
 				<!--<li><a href="#showtime">showtime</a></li>-->
-				<li><a href="about.html">about us</a></li>
-				<li><a href="team.html">meet 'n greet</a></li>
-				<li><a href="contact.html">get in touch</a></li>
-				<li><a href="career.html">join us</a></li>
+				<li<?php echo (strpos($url, 'about.html')) ? ' class="active" ' : ''; ?>><a href="about.html">about us</a></li>
+				<li<?php echo (strpos($url, 'team.html')) ? ' class="active" ' : ''; ?>><a href="team.html">meet 'n greet</a></li>
+				<li<?php echo (strpos($url, 'contact.html')) ? ' class="active" ' : ''; ?>><a href="contact.html">get in touch</a></li>
+				<li<?php echo (strpos($url, 'career.html')) ? ' class="active" ' : ''; ?>><a href="career.html">join us</a></li>
 			</ul>
 			<button>&#160;</button>
 		</div>

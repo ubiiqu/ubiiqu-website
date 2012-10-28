@@ -2,8 +2,6 @@
 error_reporting(0);
 ini_set('display_errors', 'off');
 
-header("Content-Type: application/json; charset=utf-8");
-
 $json = array();
 $json['status'] = false;
 
@@ -66,5 +64,6 @@ if($_POST) {
 $response = json_encode($json);
 
 if(isset($_REQUEST['xhr'])) {
+	header("Content-Type: application/json; charset=utf-8");
 	echo $response;
 }
