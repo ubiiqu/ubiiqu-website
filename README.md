@@ -5,7 +5,7 @@ To be able to create a new build, install node.js and run the following commands
 
 `npm install -g grunt`
 
-`npm install grunt-contrib-less grunt-contrib-copy grunt-contrib-clean grunt-contrib-compress grunt-contrib-sass`
+`npm install`
 
 After that you can open the console and just type `grunt` to create a new build in the "dist" folder.
 
