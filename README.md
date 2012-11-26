@@ -1,5 +1,5 @@
-Project-Template
-================
+ubiiqu Website
+==============
 
 To be able to create a new build, install node.js and run the following commands:
 
